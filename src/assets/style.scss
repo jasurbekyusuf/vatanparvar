@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+
+html {
+  overflow-x: hidden;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #333333;
+}
+
+html, body {
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+
+.main {
+  flex: 1 1;
+}
+
+.container {
+  max-width: 1640px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+body {
+  &.n3__wcag__color_black *:not(.n3__vision__settings-panel):not(.n3__vision__settings-panel__groups):not(.n3__vision__settings-group):not(.n3__vision__settings-group__label):not(.n3__vision__modal__dialog-wrapper):not(.n3__vision__modal__backdrop):not(.n3__vision__settings-button):not(.n3__vision__settings-group__buttons):not(.n3__vision__color-button):not(.n3__vision__settings-panel__buttons):not(.n3__vision__modal) {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+  }
+
+  &.n3__wcag__color_white *:not(.n3__vision__settings-panel):not(.n3__vision__settings-panel__groups):not(.n3__vision__settings-group):not(.n3__vision__settings-group__label):not(.n3__vision__modal__dialog-wrapper):not(.n3__vision__modal__backdrop):not(.n3__vision__settings-button):not(.n3__vision__settings-group__buttons):not(.n3__vision__color-button):not(.n3__vision__settings-panel__buttons):not(.n3__vision__modal) {
+    background-color: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+  }
+
+  &.n3__wcag__color_blue *:not(.n3__vision__settings-panel):not(.n3__vision__settings-panel__groups):not(.n3__vision__settings-group):not(.n3__vision__settings-group__label):not(.n3__vision__modal__dialog-wrapper):not(.n3__vision__modal__backdrop):not(.n3__vision__settings-button):not(.n3__vision__settings-group__buttons):not(.n3__vision__color-button):not(.n3__vision__settings-panel__buttons):not(.n3__vision__modal) {
+    background-color: #9DD0FC !important;
+    color: #000 !important;
+    box-shadow: none !important;
+  }
+
+  &.n3__wcag__images_off  img:not(.lang-item) {
+    filter: brightness(0) invert(1);
+  }
+
+
+
+  &.n3__wcag__kerning_average * {
+    letter-spacing: 3px;
+  }
+  &.n3__wcag__kerning_large * {
+    letter-spacing: 6px;
+  }
+
+  &.n3__wcag__fontsize_average *:not(.swiper-slide_content_title) {
+    font-size: 1.2rem !important;
+  }
+  &.n3__wcag__fontsize_large *:not(.swiper-slide_content_title) {
+    font-size: 1.4rem !important;
+  }
+}
+
+
+

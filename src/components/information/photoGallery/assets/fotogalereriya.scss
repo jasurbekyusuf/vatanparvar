@@ -1,0 +1,13 @@
+.fotogalereya{
+    padding: 70px 0;
+    margin: 0 auto;
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        img{
+            max-width: 380px;
+        }
+    }
+}

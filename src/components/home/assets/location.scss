@@ -1,0 +1,109 @@
+    .location {
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            @media (max-width: 938px) {
+                width: 100%;
+            }
+           
+        }
+        &-info {
+            width: 40%;
+            padding: 10px 0;
+            a {
+                padding-left: 15px;
+                color: #2595E7;
+                font-size: 17px;
+            }
+            .location-info-address {
+                display: flex;
+                // a {
+                //     padding-top: 55px;
+                // }
+            }
+            .location-info-email {
+                display: flex;
+                padding-top: 23px;
+                .email {
+                    padding-top: 4px;
+                }
+            }
+            .location-info-phone {
+                display: flex;
+                padding-top: 23px;
+            }
+            .location-info-document {
+                display: flex;
+                padding-top: 23px;
+                a {
+                    padding-top: 8px;
+                }
+            }
+            .icon {
+                transition: 0.4s;
+                &:hover {
+                    transform: rotateY(360deg) scale(1.2);
+                }
+            }
+            .location-info-social {
+                padding-top: 25px;
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                a {
+                    padding: 0;
+                }
+                .location-info-social-item {
+                    &_item {
+                        color: #2595E7;
+                        display: flex;
+                        width: 33px;
+                        height: 33px;
+                        justify-content: center;
+                        align-items: center;
+                        border: 3px solid #2595E7;
+                        border-radius: 50%;
+                        transition: 0.4s;
+                        &:hover {
+                            transform: rotate(360deg) scale(1.2);
+                            background-color: #2595E7;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        &-map {
+            width: 60%;
+            height: 100%;
+            .map-sect {
+                width: 100% !important;
+                height: 100% !important;
+    
+            }
+            
+        }
+        @media (max-width: 718px) {
+            &-container {
+                display: block;
+                width: 100%;
+            }
+            &-info {
+                width: 100%;
+                padding-bottom: 40px;
+            }
+            &-map {
+                width: 100%;
+                .map-sect {
+                    width: 100%;
+                }
+            }
+        }
+
+        .iconn {
+            padding: 0;
+        }
+    }

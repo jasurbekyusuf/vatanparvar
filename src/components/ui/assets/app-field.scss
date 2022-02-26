@@ -1,0 +1,186 @@
+.app-field {
+  position: relative;
+
+  &_label {
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    transition: 0.2s;
+    text-transform: to-lower-case($string: "");
+    color: #cbc8c8;
+    font-size: 13px;
+    pointer-events: none;
+  
+  }
+ 
+  .error-message {
+    color: #FF531F;
+    position: absolute;
+    font-size: 13px;
+    top: 13px;
+    left: 15px;
+    pointer-events: none;
+  }
+
+
+ 
+ 
+
+  select {
+    &:disabled {
+      cursor: not-allowed;
+      background: rgb(221, 218, 218);
+    }
+    background-image: linear-gradient(45deg, transparent 50%, #cbc8c8 50%),
+    linear-gradient(135deg, #cbc8c8 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px,1px 1.5em;
+    background-repeat: no-repeat;
+  }
+
+  select:focus {
+    background-image:
+      linear-gradient(45deg, #cbc8c8 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, #cbc8c8 50%);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+    outline: 0;
+  }
+
+  &_input {
+    :disabled {
+      cursor: not-allowed;
+    }
+    &::-webkit-datetime-edit-fields-wrapper {
+      opacity: 0; 
+    }
+    &::-webkit-calendar-picker-indicator{
+      opacity: 0.3;
+    }
+   
+    &:focus,
+    &.value,
+    &.error {
+      box-shadow: #91c9f2 0px -1.5px 1px 0px, #91c9f2 0px 0px 5px 0.5px;
+      border: none;
+      background-color: #ffffff;
+       text-transform: capitalize  !important;
+      &+.app-field_label {
+        top: 0;
+        transform: translateY(-140%);
+        .label-icon{
+          transform: translateY(250%);
+        }
+      }
+      &::-webkit-datetime-edit-fields-wrapper {
+        opacity: 1;
+        color: #000;
+      }
+     
+    }
+   
+
+    &.error {
+      box-shadow: #FF531F 0px 3px 12px;
+      border: 1.5px solid #FF531F !important;
+      opacity: 52%;
+      background-image: none;
+      &::-webkit-datetime-edit-fields-wrapper {
+        opacity: 0;
+      }
+      &::-webkit-calendar-picker-indicator{
+        opacity: 0;
+      }
+      &:focus {
+        color: #000;
+        &::-webkit-datetime-edit-fields-wrapper {
+          opacity: 1;
+          color: #000;
+          .error-icon{
+            opacity: 0;
+          }
+        }
+        &~.error-message {
+          display: none;
+        }
+      }
+    }
+
+  }
+
+
+}
+
+.field-description {
+  text-align: center;
+  color: #a19e9e;
+}
+
+.what-this-is {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  transition: 0.3s;
+  right: -3px;
+  transform: translateX(100%);
+  width: 17px;
+  height: 17px;
+  background-color: #e7e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  border-radius: 3px;
+  color: #ffffff;
+
+  &.open {
+    background-color: #000;
+  }
+}
+
+
+.image_uploader {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+
+  & label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 4px;
+    cursor: pointer;
+  }
+
+  &-name {
+    flex: 1 1;
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    border-radius: 10px;
+    border: 1px solid #e2dfdf;
+    color: #cbc8c8;
+  }
+
+  &-btn {
+    width: 42px;
+    height: 42px;
+    background-color: #1e89ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+}

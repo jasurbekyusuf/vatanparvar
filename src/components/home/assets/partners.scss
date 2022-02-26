@@ -1,0 +1,38 @@
+.partners {
+    z-index: 1111;
+    padding-bottom: 70px;
+    user-select: none;
+    a {
+        color: #333333;
+    }
+    .swiper-wrapper {
+        padding: 30px 0;
+    }
+    .contanerr {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .swiper {
+        padding: 0 54px;
+        .swiper-button-next {
+            display: none;
+        }
+        .swiper-button-prev {
+            display: none;
+        }
+    }
+    .slider-item_img {
+        margin-bottom: 20px;
+        -webkit-user-drag: none;
+        img {
+            width: 145px;
+            height: 145px;
+        }
+    }
+    .swiper-slide_body {
+        text-align: center;
+        padding: 20px;
+        // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+    }
+}

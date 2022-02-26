@@ -1,0 +1,27 @@
+.app-footer {
+    padding: 15px 20px;
+    background-color: #fff;
+    line-height: 24px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    .footer-bottom {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 812px) {
+            display: block;
+            width: 95%;
+            text-align: center;
+        }
+        a {
+            color: #333333;
+            display: inline-block;
+            &:hover {
+                text-decoration: underline;
+                color: #2595E7;
+            }
+        }
+    }   
+}

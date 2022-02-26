@@ -1,0 +1,24 @@
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  #logo_header{
+    color: red;
+  }
+  img {
+    border: 1px solid #f4f4f4;
+    cursor: pointer;
+    -webkit-user-drag: none;
+  }
+  &:before {
+    content: "";
+    width: 0.5px;
+    height: 130%;
+    background-color: #2595E7;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+}

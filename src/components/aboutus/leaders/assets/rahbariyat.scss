@@ -1,0 +1,121 @@
+.rahbariyat{
+    .web{
+        display: flex;
+        .icon{
+            margin-right: 10px !important;
+            @media (max-width: 549px){
+                width: 25px;
+            }
+        }
+        @media (max-width: 549px){
+            width: 100%;
+            p{
+              font-size: 15px !important;
+              padding: 9px 0;
+            }
+        }
+    }
+    padding: 70px 0;
+    a{
+        color: #333;
+        transition: all 0.4s ease-in-out;
+        &:hover{
+            color: #2595E7;
+        }
+    }
+    .icons{
+        display: flex;
+        .icon{
+            margin-right: 10px !important;
+            @media (max-width: 549px){
+                width: 25px;
+            }
+        }
+    }
+    &-info{
+        width: 65%;
+        margin: 0 auto;
+        @media (max-width: 1539px){
+            width: 80%;           
+        }
+        @media (max-width: 1168px){
+           width: 50%;
+        }
+        @media (max-width: 800px){
+            width: 90%;
+        }
+        @media (max-width: 549px){
+            width: 100%;
+            .rahbariyat-list-text{
+                width: 100% !important;
+                p{
+                    font-size: 15px !important;
+                    padding: 8px 0 10px 0;
+                }
+                
+            }
+            .rahbariyat-list-text-position{
+                font-size: 25px !important;
+            }
+
+        }
+    }
+    &-list{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 100%;
+        border-radius: 5px;
+        margin: 35px 0;
+        padding: 20px;
+        transition: 0.4s;
+        .content-wrapper{ 
+            display: flex;
+            @media (max-width: 1168px){
+               display: block;
+               img{
+                   width: 100%;
+               }
+            .rahbariyat-list-text{
+                width: 100%;
+                padding-left: 0 !important;
+            }
+            
+            }
+            .rahbariyat-list-text-position{
+                margin-top: 15px;
+            }
+        }
+        &:hover {
+            transform: scale(0.95);
+            cursor: pointer;
+          }
+       
+        &-text{
+            width: 50%;
+            padding-left: 25px;
+        }
+        p{
+            font-size: 20px ;    
+            padding-bottom: 20px;  
+            padding-top: 5px;
+            font-family: "Roboto Condensed", sans-serif;  
+            // display: block;  
+        }
+        img{
+            width: 50%;
+                  height: 100%;
+                  object-fit: cover;
+                  transition: 0.3s;
+                  border-radius: 5px;
+        }
+        &-text-position{
+            font-size: 25px!important;
+            padding-top: 0 !important;
+        }
+        &-text-name{
+            color: #2595E7;
+            font-size: 21px !important;
+            padding-top: 0 !important;
+            text-transform: uppercase;
+        }
+    }
+}
